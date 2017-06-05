@@ -1,20 +1,18 @@
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
-    var person1Input = $("input#person1").val();
-    var person2Input = $("input#person2").val();
+    var monthInput = $("input#month").val();
+    var colorInput = $("input#color").val();
     var animalInput= $("input#animal").val();
-    var exclamationInput = $("input#exclamation").val();
-    var verbInput = $("input#verb").val();
-    var nounInput = $("input#noun").val();
+    var browserInput = $("input#browser").val();
+      console.log(monthInput, colorInput, animalInput, browserInput);
 
-    $(".person1").text(person1Input);
-    $(".person2").text(person2Input);
+
+    $(".month").text(monthInput);
+    $(".color").text(colorInput);
     $(".animal").text(animalInput);
-    $(".exclamation").text(exclamationInput);
-    $(".verb").text(verbInput);
-    $(".noun").text(nounInput);
+    $(".browser").text(browserInput);
 
-    $("#story").show();
+// NOTE: Removed the show comand for now  $("#list").show();
 
     event.preventDefault();
   });
